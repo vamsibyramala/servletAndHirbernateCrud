@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .btn-submit {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .btn-fetch {
+            background-color: #2196F3;
+            color: white;
+        }
+        .btn-update {
+            background-color: #FFC107;
+            color: white;
+        }
+        .btn-delete {
+            background-color: #f44336;
+            color: white;
+        }
+        button:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+    </style>
+
+<body>
+
+<!-- Fetch by ID Form -->
+    <div class="form-container">
+        <h3>Fetch Data by ID</h3>
+        <form action="fetchName" method="GET">
+            <div class="form-group">
+                <label for="fetch-id">ID:</label>
+                <input type="text" id="fetch-id" name="name" placeholder="Enter Name" required>
+            </div>
+            <button type="submit" class="btn-fetch">Fetch</button>
+        </form>
+    </div>
+
+</body>
+</html>
